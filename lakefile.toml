@@ -20,3 +20,7 @@ name = "Triangle"
 [[lean_exe]]
 name = "triangle"
 root = "Main"
+
+[[lean_exe]]
+name = "svgtest"
+root = "SvgTest"
