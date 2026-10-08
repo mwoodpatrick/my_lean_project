@@ -36,28 +36,50 @@ The creator of Lean, Leonardo de Moura, and the development team have explicitly
 - Lean 4 was designed to be the "forever architecture"—an extensible, self-hosting platform flexible enough to evolve without requiring another ground-up rewrite.
 2. Extensibility prevents the need for a total rewrite:
 - Because Lean 4 is self-hosting and features an extensible parser and elaborator, new syntax, tactics, and compiler features can be added via libraries or modular updates without breaking the entire foundation.
-3. Stability and the Lean Focused Research Organization (FRO):
+3. Stability and the Lean Focused Research Organization ([FRO](https://lean-lang.org/fro/)):
 - The establishment of the Lean FRO is dedicated to long-term stability, industry use, software engineering scalability, and backwards compatibility. A disruptive "Lean 5" that breaks Mathlib again is the opposite of the community's current goals.
 4. Semantic Versioning:
 - Updates are delivered through regular releases within the Lean 4.x lifecycle (e.g., v4.8, v4.9, etc.), focusing on compiler optimizations, proof automation, and language stability.
 
+## Creating a Lean project
+
+Use the [Lake](https://github.com/leanprover/lean4/blob/master/src/lake/README.md) (Lean make)  build system and package manager for Lean 4 to create and maintain Lean projects
+
+## Extending the Lean language
+
+Lean 4 is fully extensible, allowing users to modify and build upon the language itself using its built-in metaprogramming, macro, and parser infrastructure. [1] (https://lean-lang.org/learn/)
+
+Core Mechanisms for Extending Lean
+
+* Macros and Syntax Extensions: You can define custom syntax, notations, and language features using a hygienic macro system built specifically for interactive theorem provers (ITPs). [1] (https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/), [2] (https://lean-lang.org/learn/)
+*- Elaborators and Delaborators:
+	* Elaborators translate high-level Syntax into the core type theory's Expr.
+	* Delaborators do the reverse, translating Expr back into user-facing Syntax. [1] (https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/)
+* Unexpanders: These act as the inverse of macros to clean up and customize how custom syntax and notation are printed back in the info view or proof state. [1] (https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/)
+* Custom Tactics: You can write your own proof automation and decision procedures directly inside Lean, taking advantage of its functional programming core. [1] (https://lean-lang.org/learn/)
+* Widgets and IDE Extensions: Using Lean's metaprogramming capabilities, you can render custom UI widgets, data visualizations, or interactive tools inside the editor's info view via the Language Server Protocol (LSP). [1] (https://www.youtube.com/watch?v=c5LOYzZx-0c&t=830)
+* Metaprogramming in Lean: Because Lean 4 is implemented in Lean itself, you do not need to learn a separate host language to extend the compiler or build domain-specific languages (DSLs). [1] (https://www.amazon.science/blog/how-the-lean-language-brings-math-to-coding-and-coding-to-math), [2] (https://www.youtube.com/watch?v=_DLtAulZaXw&t=118), [3] (https://www.youtube.com/watch?v=BY78oZYMGCk)
+
+## Verso
+
+[Verso](https://verso.lean-lang.org/) is a platform for writing documents, books, course materials, and websites with Lean. Every code example is type-checked. Every rendered page is interactive. And it's all built on the tools you already use.
+
 ## References
 
-- [Lean: The Programming Language Rewriting Mathematics](https://vplevris.medium.com/lean-the-programming-language-rewriting-mathematics-eca90a4aa167)
-- [Lean Website](https://lean-lang.org/)
-- [lean4](https://github.com/leanprover/lean4)
-- [Lake](https://github.com/leanprover/lean4/blob/master/src/lake/README.md) (Lean make) the new build system and package manager for Lean 4 
-[Making a “Hello World” in Lean](https://levelup.gitconnected.com/making-a-hello-world-in-lean-10871f2b93c3)
-- [lean.nvim](https://github.com/Julian/lean.nvim)
-- [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
-- [The lean.nvim Manual](https://github.com/Julian/lean.nvim/wiki/The-lean.nvim-Manual)
-- [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/index.html)
-- [Functional Programming in Lean](https://lean-lang.org/functional_programming_in_lean/)
-- [leanprover-community](https://github.com/leanprover-community)
-- [What Is Math’s Mysterious Langlands Program Really About?](https://www.quantamagazine.org/what-is-maths-mysterious-langlands-program-really-about-20260909/?fbclid=IwdGRjcAUUiMdjbGNrBRSIvXBkb2YFZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEeWLamFpKEu_CJw5MOcVECw83D-0cuWWbfapx8KQkMcIpDKCyPkurC_u-L9es_aem_dPpvV0UMSPfARp7n50Ddcw)
-- [Lawrence Paulson: AI and Isabelle: experiences and perspectives](https://www.youtube.com/watch?v=nI9hTbLsN4M&t=1832s)
-- [exlean](https://exlean.org/)
-- [exlean - youtube](https://www.youtube.com/@exlean7708)
+* [Lean: The Programming Language Rewriting Mathematics](https://vplevris.medium.com/lean-the-programming-language-rewriting-mathematics-eca90a4aa167)
+* [Lean Website](https://lean-lang.org/)
+* [lean4](https://github.com/leanprover/lean4)
+* [Making a “Hello World” in Lean](https://levelup.gitconnected.com/making-a-hello-world-in-lean-10871f2b93c3)
+* [lean.nvim](https://github.com/Julian/lean.nvim)
+* [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
+* [The lean.nvim Manual](https://github.com/Julian/lean.nvim/wiki/The-lean.nvim-Manual)
+* [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/index.html)
+* [Functional Programming in Lean](https://lean-lang.org/functional_programming_in_lean/)
+* [leanprover-community](https://github.com/leanprover-community)
+* [What Is Math’s Mysterious Langlands Program Really About?](https://www.quantamagazine.org/what-is-maths-mysterious-langlands-program-really-about-20260909/?fbclid=IwdGRjcAUUiMdjbGNrBRSIvXBkb2YFZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEeWLamFpKEu_CJw5MOcVECw83D-0cuWWbfapx8KQkMcIpDKCyPkurC_u-L9es_aem_dPpvV0UMSPfARp7n50Ddcw)
+* [Lawrence Paulson: AI and Isabelle: experiences and perspectives](https://www.youtube.com/watch?v=nI9hTbLsN4M&t=1832s)
+* [exlean](https://exlean.org/)
+* [exlean - youtube](https://www.youtube.com/@exlean7708)
 
 ## GitHub configuration
 
