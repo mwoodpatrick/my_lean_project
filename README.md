@@ -45,20 +45,23 @@ The creator of Lean, Leonardo de Moura, and the development team have explicitly
 
 Use the [Lake](https://github.com/leanprover/lean4/blob/master/src/lake/README.md) (Lean make)  build system and package manager for Lean 4 to create and maintain Lean projects
 
+## [Learning Lean](https://lean-lang.org/learn/)
+
 ## Extending the Lean language
 
 Lean 4 is fully extensible, allowing users to modify and build upon the language itself using its built-in metaprogramming, macro, and parser infrastructure. [1] (https://lean-lang.org/learn/)
 
 Core Mechanisms for Extending Lean
 
-* Macros and Syntax Extensions: You can define custom syntax, notations, and language features using a hygienic macro system built specifically for interactive theorem provers (ITPs). [1] (https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/), [2] (https://lean-lang.org/learn/)
-*- Elaborators and Delaborators:
+[The Best New Programming Language is a Proof Assistant by Harry Goldstein | DC Systems 006](https://www.youtube.com/watch?v=c5LOYzZx-0c&t=830s)
+* [Macros and Syntax Extensions](https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/): You can define custom syntax, notations, and language features using a hygienic macro system built specifically for interactive theorem provers (ITPs).  
+* Elaborators and Delaborators:
 	* Elaborators translate high-level Syntax into the core type theory's Expr.
-	* Delaborators do the reverse, translating Expr back into user-facing Syntax. [1] (https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/)
-* Unexpanders: These act as the inverse of macros to clean up and customize how custom syntax and notation are printed back in the info view or proof state. [1] (https://lean-lang.org/doc/reference/latest/Notations-and-Macros/Extending-Lean___s-Output/)
-* Custom Tactics: You can write your own proof automation and decision procedures directly inside Lean, taking advantage of its functional programming core. [1] (https://lean-lang.org/learn/)
-* Widgets and IDE Extensions: Using Lean's metaprogramming capabilities, you can render custom UI widgets, data visualizations, or interactive tools inside the editor's info view via the Language Server Protocol (LSP). [1] (https://www.youtube.com/watch?v=c5LOYzZx-0c&t=830)
-* Metaprogramming in Lean: Because Lean 4 is implemented in Lean itself, you do not need to learn a separate host language to extend the compiler or build domain-specific languages (DSLs). [1] (https://www.amazon.science/blog/how-the-lean-language-brings-math-to-coding-and-coding-to-math), [2] (https://www.youtube.com/watch?v=_DLtAulZaXw&t=118), [3] (https://www.youtube.com/watch?v=BY78oZYMGCk)
+	* Delaborators do the reverse, translating Expr back into user-facing Syntax.
+* Unexpanders: These act as the inverse of macros to clean up and customize how custom syntax and notation are printed back in the info view or proof state.
+* Custom Tactics: You can write your own proof automation and decision procedures directly inside Lean, taking advantage of its functional programming core.
+* Widgets and IDE Extensions: Using Lean's metaprogramming capabilities, you can render custom UI widgets, data visualizations, or interactive tools inside the editor's info view via the Language Server Protocol (LSP).
+* Metaprogramming in Lean: Because Lean 4 is implemented in Lean itself, you do not need to learn a separate host language to extend the compiler or build domain-specific languages (DSLs).
 
 ## Verso
 
