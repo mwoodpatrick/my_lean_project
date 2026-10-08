@@ -1,7 +1,7 @@
 name = "my_lean_project"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["MyMathProject"]
+defaultTargets = ["Triangle"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
@@ -15,4 +15,8 @@ scope = "leanprover-community"
 rev = "v4.34.1"
 
 [[lean_lib]]
-name = "MyMathProject"
+name = "Triangle"
+
+[[lean_exe]]
+name = "triangle"
+root = "Main"
