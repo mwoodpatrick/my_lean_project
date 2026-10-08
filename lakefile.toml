@@ -1,4 +1,4 @@
-name = "my_math_project"
+name = "my_lean_project"
 version = "0.1.0"
 keywords = ["math"]
 defaultTargets = ["MyMathProject"]

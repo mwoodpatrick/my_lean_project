@@ -1,4 +1,12 @@
-# my_math_project
+# my_lean_project
+
+## References
+
+[Making a “Hello World” in Lean](https://levelup.gitconnected.com/making-a-hello-world-in-lean-10871f2b93c3)
+[lean.nvim](https://github.com/Julian/lean.nvim)
+[The lean.nvim Manual](https://github.com/Julian/lean.nvim/wiki/The-lean.nvim-Manual)
+[leanprover-community](https://github.com/leanprover-community)
+[
 
 ## GitHub configuration
 
