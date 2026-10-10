@@ -1,5 +1,8 @@
 import Mathlib.Basic.Real.Basic
+
 import ProofWidgets.Component.HtmlDisplay
+
+set_option linter.hashCommand false
 
 open scoped ProofWidgets.Jsx
 open ProofWidgets
@@ -17,6 +20,7 @@ def sampleSvgWidget : Html :=
   </svg>
 
 #eval 3+3
+#html sampleSvgWidget
 
 def main : IO Unit := do
   IO.println "SVG Widget compiled successfully."

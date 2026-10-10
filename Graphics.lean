@@ -1,6 +1,8 @@
 import Mathlib.Basic.Real.Basic
 import ProofWidgets.Component.HtmlDisplay
 
+set_option linter.hashCommand false
+
 -- Correctly bring the JSX scope into context:
 open scoped ProofWidgets.Jsx
 
