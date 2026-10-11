@@ -67,8 +67,8 @@ The Lean Focused Research Organization is working to make formal verification mo
 
 - The establishment of the Lean FRO is dedicated to long-term stability, industry use, software engineering scalability, and backwards compatibility. A disruptive "Lean 5" that breaks Mathlib again is the opposite of the community's current goals.
 
-[FRO's web documentation**](https://convergent-theta.vercel.app/ecosystem/lean)
-[FRO - youtube](https://www.youtube.com/channel/UC33n-zWRgO613Qwt4TQx6LQ)
+* [FRO's web documentation](https://convergent-theta.vercel.app/ecosystem/lean)
+* [FRO - youtube](https://www.youtube.com/channel/UC33n-zWRgO613Qwt4TQx6LQ)
 * [Stability and the Lean Focused Research Organization](https://lean-lang.org/fro/)
 
 ## Verso
@@ -76,10 +76,11 @@ The Lean Focused Research Organization is working to make formal verification mo
 [Verso](https://verso.lean-lang.org/) is a platform for writing documents, books, course materials, and websites with Lean. Every code example is type-checked. Every rendered page is interactive. And it's all built on the tools you already use. Notable Uses of Verso: Powering modern interactive formalization projects, pedagogical resources: 
 
 - Terence Tao's Lean companion to Analysis I: 
-    * **GitHub Repository:** [https://github.com/teorth/analysis](https://github.com/teorth/analysis)
-    * **Interactive Verso Documentation & Book Pages:** [https://teorth.github.io/analysis/](https://teorth.github.io/analysis/)
-    * **Announcement & Discussion (Terence Tao's Blog):** [A Lean companion to "Analysis I"](https://terrytao.wordpress.com/2025/05/31/a-lean-companion-to-analysis-i/)
-- [**The Lean FRO's web documentation**](https://convergent-theta.vercel.app/ecosystem/lean)
+    * [GitHub Repository](https://github.com/teorth/analysis)
+    * [Interactive Verso Documentation & Book Pages](https://teorth.github.io/analysis/)
+    * [Generated documentation](https://teorth.github.io/analysis/docs/) is available for the project and its dependencies.
+    * [Announcement & Discussion (Terence Tao's Blog)](https://terrytao.wordpress.com/2025/05/31/a-lean-companion-to-analysis-i/)
+- [The Lean FRO's web documentation](https://convergent-theta.vercel.app/ecosystem/lean)
 
 ### Basic Verso Blog/Website
 
