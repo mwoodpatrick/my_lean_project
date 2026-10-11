@@ -19,6 +19,26 @@ algebra, pythagoras, real
 
 [Making a “Hello World” in Lean](https://levelup.gitconnected.com/making-a-hello-world-in-lean-10871f2b93c3
 
+Embedded OKF / AI-XF Frontmatter Metadata
+---
+id: math.analysis.pythagoras_algebra
+type: formal_proof
+title: "Pythagorean Expansion"
+version: "0.2.0"
+status: "verified"
+provenance:
+  agent: "human-curated"
+  checker: "lean4-kernel"
+  theory: "Mathlib.Data.Real.Basic"
+links:
+  - rel: verifies
+    target: claim.pythagoras_lemma
+  - rel: relies_on
+    target: math.ring_theory.ring_tactic
+    text: "Mathlib Ring Tactic"
+  - rel: defines
+    target: concept.algebraic_identities
+    text: "Algebraic Identities"
 -/
 
 theorem pythagoras_algebra (a b c : Real)
