@@ -67,6 +67,18 @@ Core Mechanisms for Extending Lean
 
 [Verso](https://verso.lean-lang.org/) is a platform for writing documents, books, course materials, and websites with Lean. Every code example is type-checked. Every rendered page is interactive. And it's all built on the tools you already use.
 
+### Basic Verso Blog/Website
+
+A minimal blog built with Verso's blog genre. Includes a front page, an about page, and a single post.
+
+Build with:
+```
+lake build
+lake exe generate-blog
+```
+
+The generated site will be in `_site/`.
+
 ## References
 
 * [Lean: The Programming Language Rewriting Mathematics](https://vplevris.medium.com/lean-the-programming-language-rewriting-mathematics-eca90a4aa167)
