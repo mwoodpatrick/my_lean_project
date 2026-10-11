@@ -80,6 +80,9 @@ The Lean Focused Research Organization is working to make formal verification mo
     * [Interactive Verso Documentation & Book Pages](https://teorth.github.io/analysis/)
     * [Generated documentation](https://teorth.github.io/analysis/docs/) is available for the project and its dependencies.
     * [Announcement & Discussion (Terence Tao's Blog)](https://terrytao.wordpress.com/2025/05/31/a-lean-companion-to-analysis-i/)
+    * [Division by zero in type theory: a FAQ](https://xenaproject.wordpress.com/2020/07/05/division-by-zero-in-type-theory-a-faq/)
+    * [Analysis I: Third Edition](https://turan-edu.uz/media/books/2024/05/28/1664976801.pdf)
+    * [Analysis II: Third Edition](https://www.amazon.com/Analysis-II-Third-Readings-Mathematics-ebook)
 - [The Lean FRO's web documentation](https://convergent-theta.vercel.app/ecosystem/lean)
 
 ### Basic Verso Blog/Website
