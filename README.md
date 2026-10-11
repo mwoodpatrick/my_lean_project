@@ -36,8 +36,6 @@ The creator of Lean, Leonardo de Moura, and the development team have explicitly
 - Lean 4 was designed to be the "forever architecture"—an extensible, self-hosting platform flexible enough to evolve without requiring another ground-up rewrite.
 2. Extensibility prevents the need for a total rewrite:
 - Because Lean 4 is self-hosting and features an extensible parser and elaborator, new syntax, tactics, and compiler features can be added via libraries or modular updates without breaking the entire foundation.
-3. Stability and the Lean Focused Research Organization ([FRO](https://lean-lang.org/fro/)):
-- The establishment of the Lean FRO is dedicated to long-term stability, industry use, software engineering scalability, and backwards compatibility. A disruptive "Lean 5" that breaks Mathlib again is the opposite of the community's current goals.
 4. Semantic Versioning:
 - Updates are delivered through regular releases within the Lean 4.x lifecycle (e.g., v4.8, v4.9, etc.), focusing on compiler optimizations, proof automation, and language stability.
 
@@ -63,9 +61,25 @@ Core Mechanisms for Extending Lean
 * Widgets and IDE Extensions: Using Lean's metaprogramming capabilities, you can render custom UI widgets, data visualizations, or interactive tools inside the editor's info view via the Language Server Protocol (LSP).
 * Metaprogramming in Lean: Because Lean 4 is implemented in Lean itself, you do not need to learn a separate host language to extend the compiler or build domain-specific languages (DSLs).
 
+## FRO
+
+The Lean Focused Research Organization is working to make formal verification more accessible across mathematics research, software and hardware verification, and AI-assisted theorem proving. Since its formation in July 2023 as a non-profit organization under Convergent Research, the FRO has pursued a focused 5-year mission to improve Lean's critical systems through enhanced scalability, usability, documentation, and proof automation while guiding the Lean programming language and proof assistant toward long-term self-sustainability.
+
+- The establishment of the Lean FRO is dedicated to long-term stability, industry use, software engineering scalability, and backwards compatibility. A disruptive "Lean 5" that breaks Mathlib again is the opposite of the community's current goals.
+
+[FRO's web documentation**](https://convergent-theta.vercel.app/ecosystem/lean)
+[FRO - youtube](https://www.youtube.com/channel/UC33n-zWRgO613Qwt4TQx6LQ)
+* [Stability and the Lean Focused Research Organization](https://lean-lang.org/fro/)
+
 ## Verso
 
-[Verso](https://verso.lean-lang.org/) is a platform for writing documents, books, course materials, and websites with Lean. Every code example is type-checked. Every rendered page is interactive. And it's all built on the tools you already use.
+[Verso](https://verso.lean-lang.org/) is a platform for writing documents, books, course materials, and websites with Lean. Every code example is type-checked. Every rendered page is interactive. And it's all built on the tools you already use. Notable Uses of Verso: Powering modern interactive formalization projects, pedagogical resources: 
+
+- Terence Tao's Lean companion to Analysis I: 
+    * **GitHub Repository:** [https://github.com/teorth/analysis](https://github.com/teorth/analysis)
+    * **Interactive Verso Documentation & Book Pages:** [https://teorth.github.io/analysis/](https://teorth.github.io/analysis/)
+    * **Announcement & Discussion (Terence Tao's Blog):** [A Lean companion to "Analysis I"](https://terrytao.wordpress.com/2025/05/31/a-lean-companion-to-analysis-i/)
+- [**The Lean FRO's web documentation**](https://convergent-theta.vercel.app/ecosystem/lean)
 
 ### Basic Verso Blog/Website
 
