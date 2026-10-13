@@ -1,4 +1,4 @@
-import Mathlib.Data.Real.Basic
+import Mathlib.Basic.Real.Basic
 
 -- a String is backed by a contiguous, UTF-8 encoded byte buffer (ByteArray).
 #check "Hello"
@@ -6,7 +6,7 @@ def greeting : String := "Hello"
 #eval greeting.length   -- Character count
 #eval greeting ++ "!"  -- "Hello!"
 
-def numbers : Array Nat := #[1, 2, 3, 4]
+def numbers : Array ℕ := #[1, 2, 3, 4]
 #check numbers
 
 /-
