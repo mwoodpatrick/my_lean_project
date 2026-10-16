@@ -66,7 +66,6 @@ theorem pythagoras_from_dissection (a b c : ℝ)
     a ^ 2 + b ^ 2 = c ^ 2 := by
   have h_four_triangles : 4 * ((a * b) / 2) = 2 * a * b := by ring
   have h_outer_square : (a + b) ^ 2 = a ^ 2 + 2 * a * b + b ^ 2 := by ring
-
   calc
     a ^ 2 + b ^ 2 = (a ^ 2 + 2 * a * b + b ^ 2) - 2 * a * b := by ring
     _             = (a + b) ^ 2 - 2 * a * b                  := by rw [← h_outer_square]
