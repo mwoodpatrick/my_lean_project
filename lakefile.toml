@@ -10,14 +10,17 @@ weak.linter.mathlibStandardSet = true
 maxSynthPendingDepth = 3
 
 [[require]]
-name = "mathlib"
-scope = "leanprover-community"
-rev = "v4.34.1"
-
-[[require]]
 name = "verso"
 git = "https://github.com/leanprover/verso.git"
-rev = "v4.34.0"
+# Match the tag to the Lean version in your lean-toolchain (omit the 'leanprover/lean4:' prefix)
+# https://github.com/leanprover/verso/releases
+rev = "v4.35.0" # or use main for latest version
+
+# put last so that Mathlib's versions take precedence
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "master"   # Or pin your matching Lean tag: "v4.35.0"
 
 [[lean_lib]]
 name = "Triangle"
