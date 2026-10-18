@@ -14,7 +14,7 @@ name = "verso"
 git = "https://github.com/leanprover/verso.git"
 # Match the tag to the Lean version in your lean-toolchain (omit the 'leanprover/lean4:' prefix)
 # https://github.com/leanprover/verso/releases
-rev = "v4.35.0" # or use main for latest version
+rev = "v4.36.0-rc1" # or use main for latest version
 
 # put last so that Mathlib's versions take precedence
 [[require]]
